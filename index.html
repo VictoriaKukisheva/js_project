@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="end_game">
+    <div id="timer"></div>
+  </div>
+  <button onclick="start()" class="start">Start</button>
+
+  <div class="end_game">
+    <div id="a1"></div>
+    <div class="oper"> ? </div>
+    <div id="a2"></div>
+    <div>=</div>
+    <div id="res"></div>
+  </div>
+  <button onclick="onBtnClick('+')" class="add">+</button>
+  <button onclick="onBtnClick('-')" class="sub">-</button>
+  <button onclick="onBtnClick('*')" class="mul">*</button>
+  <button onclick="onBtnClick('/')" class="divs">/</button>
+
+  <button onclick="finish()" class="start">Finish</button>
+
+  <div id="time"></div>
+
+  <div class="end_game">
+    <div id="prim_done">Решено примеров: </div>
+    <div id="right_done">Правильно: </div>
+    <div id="avg_time">Среднее время решения примера: </div>
+    <div id="max_time">Максимальное время решения примера: </div>
+    <div id="min_time">Миинимальное время решения примера: </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

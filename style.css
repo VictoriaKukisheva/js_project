@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+   
+    background-blend-mode: multiply;
+    background: url('img/background.gif') no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba( 255, 0, 0, 0.5);
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+body .start {
+  border: none;
+  background: transparent;
+  padding: 0 24px;
+  font-size: 48px;
+  line-height: 104px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: relative;
+  color: #ffa0c4;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+body .start:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 96px;
+  background: transparent;
+  border: 2px solid #f5276c;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+body .start:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0);
+  height: 30px;
+  width: 80%;
+  z-index: -1;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+body .start:hover {
+  color: rgb(255, 255, 255);
+}
+body .start:hover:before {
+  width: 100%;
+  background: #f5276c;
+  box-shadow: 0 10px 90px -2px rgba(0, 0, 0, 0.2);
+}
+
+.end_game {
+  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-size: 48px; */
+  color: white;
+}
