@@ -1,23 +1,3 @@
-// var start = document.querySelector('.start');
-
-// start.onclick = function(){
-//     var text = 'Some thoughts';
-//     console.log(text);
-
-//     start.style.opacity = 0;
-
-//     addDiv();
-// };
-
-//     var div = document.createElement("div");
-//     div.style.width = "100px";
-//     div.style.height = "100px";
-//     div.style.background = "red";
-//     div.style.color = "white";
-//     div.innerHTML = "Hello";
-
-//     document.getElementById("main").appendChild(div);
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
